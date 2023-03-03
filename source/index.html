@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: {{projectTitle}}</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class=".page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">ГЛАВНАЯ</li>
+          <li class="main-nav__item">ФОТО И ВИДЕО</li>
+          <li class="main-nav__item">ФОРМА ОТЗЫВА</li>
+          <li class="main-nav__item">HTML ACADEMY</li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <main class="page-main">
+      <section class="intro intro__wrapper">
+        <img class="intro__image-back intro__wrapper" src="img/back-mobile.jpg" width="320" height="390" alt="красивый фон природы">
+        <img class="intro__image-welcome intro__wrapper" src="img/welcome_img.svg" width="115" height="27" alt="Красивая надпись Welcome">
+        <img class="intro__image-gorgeous intro__wrapper" src="img/to-the-gorgeous_img.svg" width="107" height="18" alt="Надпись to the gorgeous">
+        <img class="intro__image-sedona intro__wrapper" src="img/sedona_img.svg" width="282" height="49" alt="большая белая надпись sedona">
+        <img class="intro__image-p intro__wrapper" src="img/because-the-grand_img.svg" width="173" height="46" alt="because the grand canyon sucks">
+      </section>
+      <section class="description description__wrapper">
+        <img class="description__image" src="img/description_img.svg" width="285" height="162" alt="СЕДОНА — небольшой  городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!">
+        <h2 class="visually-hidden">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p class="visually-hidden">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬЕН!</p>
+      </section>
+      <section class="advantages-list advantages-list__wrapper">
+        <div class="advantages-item advantages-item__wrapper">
+          <div class="advantages-item__description advantages-item__description-wrapper">
+            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p>N1</p>
+            <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+          <img class="advantages-item__image advantages-item__image-wrapper" src="img/photo-city.png" width="520" height="260" alt="фото города, фрагмент">
+          <dl class="section__list">
+            <img class="section__list-icon" src="img/icon-house.svg" alt="схематиченое изображение домика">
+            <dt class="section__list-description">ЖИЛЬЕ</dt>
+              <dd class="section__list-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</dd>
+            <img class="section__list-icon" src="img/icon-gift.svg" alt="схематиченое изображение подарка">
+            <dt class="section__list-description">СУВЕНИРЫ</dt>
+              <dd class="section__list-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗОДСТВА!</dd>
+            <img class="section__list-icon" src="img/icon-burger.svg" alt="схематиченое изображение подарка">
+            <dt class="section__list-description">ЕДА</dt>
+              <dd class="section__list-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЙТЕСЬ!</dd>
+          </dl>
+        </div>
+        <div class="advantages-item advantages-item__wrapper">
+          <div class="advantages-item__description advantages-item__description-wrapper">
+            <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+            <p>№2</p>
+            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ ВЫ ОСМЕЛИТЕСЬ,КОНЕЧНО</p>
+          </div>
+          <img class="advantages-item__image advantages-item__image-wrapper" src="img/photo-bridge.png" width="520" height="260" alt="фото моста, фрагмент">
+        </div>
+        <div class="advantages-item advantages-item__wrapper">
+          <div class="advantages-item__description advantages-item__description-wrapper">
+            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p>№3</p>
+            <p>ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </div>
+        </div>
+        <div class="advantages-item advantages-item__wrapper">
+          <div class="advantages-item__description advantages-item__description-wrapper">
+            <h3>КРАСИВАЯ ДОРОГА</h3>
+            <p>№4</p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </div>
+        </div>
+        <div class="advantages-item advantages-item__wrapper">
+          <div class="advantages-item__description advantages-item__description-wrapper">
+            <h3>МАЛО ТУРИСТОВ</h3>
+            <p>№5</p>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬЕН И ТОЛПИТСЯ ТАМ</p>
+          </div>
+        </div>
+      </section>
+      <section class="">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      </section>
 
+    </main>
   </body>
 </html>
-
