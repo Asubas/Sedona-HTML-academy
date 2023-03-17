@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head class="page-cataloge">
+  <meta charset="UTF-8">
+  <title>catalog</title>
+</head>
+<body class="page-cataloge_body">
+  <header class="page-header">
+    <a class=".page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">ГЛАВНАЯ</a></li>
+        <li class="main-nav__item">
+          <a href="catalog.html">ФОТО И ВИДЕО</a></li>
+        <li class="main-nav__item  main-nav__item--active">
+          <a href="form.html">ФОРМА ОТЗЫВА</a></li>
+        <li class="main-nav__item">
+          <a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <main class="page-cataloge__main">
+    <section class="page-form__header">
+      <h1 class="page_form__title">Фото и видео</h1>
+      <p class="page-form__description">Не можете решиться на путешествие из за курса?
+        Фотографии помогут вам забыть о политике и экономике</p>
+    </section>
+    <section class="page-cataloge__photo">
+      <ul class="photo-list photo-list__wrapper">
+        <li class="photo-item">
+          <img class="photo-item__photo" src="img/photo-road.png" alt="Фото дороги">
+          <h3 class="photo-item__title">Народные просторы</h3>
+          <p class="photo-item__autor">Автор фото: Борис</p>
+          <span class="photo-item__like" >1350</span>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__photo" src="img/photo-flower.png" alt="Фото растения">
+          <h3 class="photo-item__title">Местная растительность</h3>
+          <p class="photo-item__autor">Автор фото: Сергей</p>
+          <span class="photo-item__like" >143</span>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__photo" src="img/photo-road-north.png" alt="Фото дороги идущей через лес">
+          <h3 class="photo-item__title">Дорога на север</h3>
+          <p class="photo-item__autor">Автор фото: Петр</p>
+          <span class="photo-item__like" >96</span>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__photo" src="img/photo-bridge.png" alt="Фото моста дьявола">
+          <h3 class="photo-item__title">Мост дьявола</h3>
+          <p class="photo-item__autor">Автор фото: Антон</p>
+          <span class="photo-item__like" >254</span>
+        </li>
+      </ul>
+    </section>
+    <section class="page-cataloge__video">
+      <h2 class="page-form__title">Все еще сомневайтесь?</h2>
+      <p class="page-form__description">Смотрите скорее призентацию </p>
+      <div class="video-container">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="controls">
+          <input type="range" class="volume-bar" min="0" max="1" step="0.1" value="1">
+          <button class="refresh">refresh</button>
+          <button class="subtitle">Subtitles On/Off</button>
+          <button class="fullscreen">Fullscreen</button>
+        </div>
+     </div>
+    </section>
+  </main>
+  <footer class="page-footer page-footer__wrapper">
+    <h3>#VISITSEDONA</h3>
+    <button type="button" class="button-social button-social__twitter"></button>
+    <button type="button" class="button-social button-social__facebook"></button>
+    <button type="button" class="button-social button-social__youtube"></button>
+    <p>РАЗРАБОТАНО <img class="" src="img/htmlacademy-icon-footer.svg" alt="значок html-академии"></p>
+  </footer>
+</body>
+</html>
