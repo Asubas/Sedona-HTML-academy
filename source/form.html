@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
 
   <title>modal</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-form__body">
   <header class="page-header">
@@ -15,6 +16,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
+        <div class="intro"></div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html">ГЛАВНАЯ</a></li>
@@ -36,28 +38,28 @@
     </section>
     <form class="form form__wrapper" name="main_form" action="https://echo.htmlacademy.ru." method="post">
       <fieldset class="form-fio form-fio__wrapper">
-        <legend class="form-fio__legend">Представьтесь: </legend>
-        <label class="name-legend" for="name">Имя:*
-          <input class="name-input " type="text" id="name" name="uname" placeholder="Петр">
+        <legend class="form-fio__title">Представьтесь: </legend>
+        <label class="form-fio__name" for="name">Имя:*
+          <input class="form-fio__name-input " type="text" id="name" name="uname" placeholder="Петр">
         </label>
-        <label class="family-legend" for="family">Фамилия:*
-          <input class="family-input " type="text" id="family" name="uname" placeholder="Иванов">
+        <label class="form-fio__name" for="family">Фамилия:*
+          <input class="form-fio__name-input" type="text" id="family" name="uname" placeholder="Иванов">
         </label>
-        <label class="name-legend" for="middle-name">Отчество:
-          <input class="middle-name-input " type="text" id="middle-name" name="uname" placeholder="Александрович">
+        <label class="form-fio__name" for="middle-name">Отчество:
+          <input class="form-fio__name-input" type="text" id="middle-name" name="uname" placeholder="Александрович">
         </label>
       </fieldset>
       <fieldset class="form-contact form-contact__wrapper">
-        <legend class="form-contact__legend">Контактная информация:: </legend>
-        <label class="telephone-legend" for="telephone">Контактный телефон:
-          <input class="telephone-input " type="tel" id="telephone" name="telephone"  placeholder="Введите телефон">
+        <legend class="page_form__title">Контактная информация:: </legend>
+        <label class="form-contact__legend" for="telephone">Контактный телефон*:<br>
+          <input class="form-contact__input " type="tel" id="telephone" name="telephone"  placeholder="Введите телефон">
         </label>
-        <label class="email-legend" for="email">Электронная почта:
-          <input class="email-input " type="email" id="email" name="email"  placeholder="Введите email">
+        <label class="form-contact__legend" for="email">Электронная почта*:<br>
+          <input class="form-contact__input " type="email" id="email" name="email"  placeholder="Введите email">
         </label>
       </fieldset>
       <fieldset class="form-choise form-choise__wrapper">
-        <legend class="form-choise__title">Ваше общее впечатление: </legend>
+        <legend class="page_form__title">Ваше общее впечатление: </legend>
         <ul class="form-choise__list">
           <li class="form-choise__item radio">
             <input id="input-radio__positive" class="visually-hidden" type="radio" name="radio" value="positive" checked>
@@ -74,7 +76,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-choise form-choise__wrapper">
-        <legend class="form-choise__title">Посещяемые достопремечательности: </legend>
+        <legend class="page_form__title">Посещяемые достопремечательности: </legend>
         <ul class="form-choise__list">
           <li class="form-choise__item checkbox">
             <input id="bridge-satan" class="visually-hidden" type="checkbox" name="checkbox" value="bridge-satan" checked>
@@ -95,7 +97,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-review form-review__wrapper">
-        <legend class="form-review__title">Опишите свои эмоции: </legend>
+        <legend class="page_form__title">Опишите свои эмоции: </legend>
           <textarea class="form-textarea" name="Отзыв клиента" rows="5" cols="70" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <input class="button button_form" type="submit" value="Отправить" aria-label="Отправить отзыв">
