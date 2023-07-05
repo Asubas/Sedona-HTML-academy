@@ -2,33 +2,30 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: {{projectTitle}}</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__mobile-wrapper">
-        <a href="index.html" class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span>Открыть меню</span>
-        </button>
-      </div>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a>ГЛАВНАЯ</a></li>
           <li class="main-nav__item">
             <a href="catalog.html">ФОТО И ВИДЕО</a></li>
           <li class="main-nav__item">
+            <a href="index.html" class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона"></a>
+          </li>
+          <li class="main-nav__item">
             <a href="form.html">ФОРМА ОТЗЫВА</a></li>
           <li class="main-nav__item">
             <a href="#">HTML ACADEMY</a></li>
+          <li class="main-nav__item">
+            <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
     </header>
     <main class="page-main">
       <section class="intro intro__wrapper">

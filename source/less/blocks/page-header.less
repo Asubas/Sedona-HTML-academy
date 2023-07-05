@@ -1,0 +1,36 @@
+.page-header {
+  background-color: #e7e4e4;
+}
+
+.main-nav__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.main-nav {
+  border: 5px solid #ff0000;
+  outline-offset: -5px;
+}
+
+.page-header__logo {
+  border: 5px solid #008000;
+  outline-offset: -5px;
+  height: 84px;
+}
+
+// @media (min-width: @tablet-width) {
+//   .main-nav__item:last-child {
+//     display: none;
+//   }
+//  }
+
+// @media (min-width: @desktop-width) {
+//   .main-nav {
+//     height: 100px;
+//   }
+// }
