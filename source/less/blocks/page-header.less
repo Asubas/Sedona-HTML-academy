@@ -1,20 +1,22 @@
-.page-header {
-  background-color: #e7e4e4;
-}
-
 .main-nav__list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
-.main-nav {
-  border: 5px solid #ff0000;
-  outline-offset: -5px;
+.main-nav__item {
+  text-align: center;
+  height: 55px;
+  background-color: #81b3d2;
+  font-family: "ptsansbold", sans-serif;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .page-header__logo {
@@ -23,14 +25,9 @@
   height: 84px;
 }
 
-// @media (min-width: @tablet-width) {
-//   .main-nav__item:last-child {
-//     display: none;
-//   }
-//  }
-
-// @media (min-width: @desktop-width) {
-//   .main-nav {
-//     height: 100px;
-//   }
-// }
+@media (max-width: @mobile-width) {
+  .logo {
+    order: 2;
+    background-color: inherit;
+  }
+}
