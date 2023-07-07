@@ -2,35 +2,32 @@
 <html lang="ru">
 <head class="page-form">
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>modal</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="page-header">
-    <a class=".page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <div class="intro"></div>
       <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="link" href="#">ГЛАВНАЯ</a></li>
         <li class="main-nav__item">
-          <a href="index.html">ГЛАВНАЯ</a></li>
+          <a class="link" href="catalog.html">ФОТО И ВИДЕО</a></li>
+        <li class="main-nav__item logo">
+          <a class="link" href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101" height="54" alt="Логотип Седона"></a>
+        </li>
         <li class="main-nav__item">
-          <a href="catalog.html">ФОТО И ВИДЕО</a></li>
-        <li class="main-nav__item  main-nav__item--active">
-          <a>ФОРМА ОТЗЫВА</a></li>
+          <a class="link" href="form.html">ФОРМА ОТЗЫВА</a></li>
         <li class="main-nav__item">
-          <a href="#">HTML ACADEMY</a></li>
+          <a class="link" href="#">HTML ACADEMY</a></li>
       </ul>
-    </div>
-  </nav>
+      <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+    </nav>
   </header>
   <main class="page-main">
+    <section class="intro-review"></section>
     <section class="main-header">
       <h1 class="main-header__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
       <p class="main-header__description">Помогите нашим отелям стать лучше!
@@ -105,9 +102,11 @@
   </main>
   <footer class="page-footer page-footer__wrapper">
     <h3>#VISITSEDONA</h3>
+    <div class="social">
     <button type="button" class="button-social button-social__twitter"></button>
     <button type="button" class="button-social button-social__facebook"></button>
     <button type="button" class="button-social button-social__youtube"></button>
+    </div>
     <p>РАЗРАБОТАНО <img class="" src="img/htmlacademy-icon-footer.svg" alt="значок html-академии"></p>
   </footer>
 </body>
